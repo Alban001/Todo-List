@@ -11,7 +11,7 @@ export default function BasicSelect({status, setStatus}) {
 
   return (
     <Box >
-        <InputLabel for='status' id="demo-simple-select-label"></InputLabel>
+        <InputLabel htmlFor='status' id="demo-simple-select-label"></InputLabel>
         <MySelector
           labelId="demo-simple-select-label"
           id="demo-simple-select"
