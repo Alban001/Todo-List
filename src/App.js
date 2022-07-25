@@ -2,9 +2,9 @@ import React, {useState, useEffect , Component} from 'react';
 import {Box} from '@mui/material';
 import Lista from './componentes/Lista';
 import './App.css'
-import { MyContainer, MyInput, ButtonAgregar, MyTypography} from './componentes/Stylo';
+import { MyInput, ButtonAgregar, MyTypography} from './componentes/Stylo';
+import { MyContainer } from './componentes/Stylo';
 import BasicSelect from './componentes/Selector'
-
 
 function App() {
 
@@ -50,12 +50,13 @@ const handleSubmit =(e)=>{
  
   return (
     <div >
+  
       <form  onSubmit={handleSubmit}>
          <MyContainer>
          <Box  pt={7} fontSize={11}>
             
             <Box  pr={8} pb={5}  sx={{fontWeight: 'bold',color:'black',fontStyle: 'italic'}}>
-              <MyTypography variant='h4'>LISTADO DE TAREAS</MyTypography>
+              <MyTypography ml={5} variant='h4'>LISTADO DE TAREAS</MyTypography>
             </Box>
             
              <Box display='flex' flexDirection='row'>
@@ -83,7 +84,7 @@ const handleSubmit =(e)=>{
         </Box>
         
       </MyContainer>
-      </form>   
+      </form>  
     </div>  
   );
 }

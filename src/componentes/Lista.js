@@ -2,7 +2,7 @@ import React from 'react';
 import { Box,Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { BoxListado, MyContainerLista } from './Stylo';
+import { MyContainerLista,BoxListado} from './Stylo';
 
 
 const Lista = ({Creado, texto, lista,setLista, setInput, list}) => {
@@ -11,7 +11,7 @@ const Lista = ({Creado, texto, lista,setLista, setInput, list}) => {
     const completoHandler=()=>{
         setLista(
             lista.map((item) =>{
-            if(item.id === list.id){
+            if(item.key === list.key){
                 return {
                     ...item, completo:!item.completo
                 }
@@ -31,10 +31,10 @@ const Lista = ({Creado, texto, lista,setLista, setInput, list}) => {
                 <BoxListado fontSize={14} p={0.1}  m={1} >
                     <li className={`${list.completo? "completo" :''}`} >{texto}</li>
                </BoxListado>
-               <Box pr={2}>
+               <Box pt={2}>
                     <Button onClick={completoHandler}><CheckCircleIcon fontSize='large' /></Button>
               </Box>
-              <Box>
+              <Box pt={2}>
                   <Button onClick={handleEliminar}><DeleteIcon fontSize='large' /></Button>
               </Box>
               
