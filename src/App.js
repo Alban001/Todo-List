@@ -20,9 +20,8 @@ useEffect(()=>{
 
 const handleSubmit =(e)=>{
   e.preventDefault()
- const Creado=new Date().toLocaleString();
  setLista(
-     [...lista,{id: Math.random()*100, text:input,newDate:JSON.stringify(Creado), completo:false, eliminado: false }]
+     [...lista,{id: Math.random()*100, text:input, completo:false, eliminado: false }]
  )
  setInput('')
 }

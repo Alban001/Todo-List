@@ -29,7 +29,7 @@ const Lista = ({Creado, texto, lista,setLista, setInput, list}) => {
     return (
         <MyContainerLista>
                 <BoxListado fontSize={14} p={0.1}  m={1} >
-                    <li className={`${list.completo? "completo" :''}`} >{texto} <br/> Creado : {Creado}</li>
+                    <li className={`${list.completo? "completo" :''}`} >{texto}</li>
                </BoxListado>
                <Box pr={2}>
                     <Button onClick={completoHandler}><CheckCircleIcon fontSize='large' /></Button>

@@ -12,7 +12,7 @@ export const MyContainer = styled(Container)({
     backgroundColor:'#ffffcc',
     borderRadius:'8px',
     height: '100%',
-    width:'70%',
+    width:'90%',
     boxShadow:'6px 12px 12px black'
   });
   
@@ -26,15 +26,19 @@ export const MyContainer = styled(Container)({
   export const MyContainerLista = styled(Container)({
             display:'flex', 
             flexDirection:'row',
-            alignItems:'center'
+            alignItems:'center',
+            height:'3rem',
   });
   export const BoxListado= styled(Box)({
             backgroundColor:'#ffd480',
-            height:'2rem',
+            height:'1.5rem',
             borderRadius:'7px',
             textAlign:'center',
             fontFamily: 'Special Elite',
-            width:'80%'
+            width:'80%',
+            paddingTop:'0.5rem',
+            marginTop:'1rem'
+           
   })
 
   export const  ButtonAgregar = styled(Button)({
