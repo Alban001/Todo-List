@@ -11,7 +11,7 @@ const Lista = ({Creado, texto, lista,setLista, setInput, list}) => {
     const completoHandler=()=>{
         setLista(
             lista.map((item) =>{
-            if(item.key === list.key){
+            if(item.id === list.id){
                 return {
                     ...item, completo:!item.completo
                 }
